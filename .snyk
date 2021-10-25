@@ -1,25 +1,658 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.22.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
+  SNYK-JS-UNDERSCORE-1080984:
+    - cfenv > underscore:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-ANSIREGEX-1583908:
+    - concurrently > yargs > cliui > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > @types/jest > jest-diff > pretty-format > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > boxen > ansi-align > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > boxen > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - snyk > @snyk/inquirer > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - snyk > @snyk/inquirer > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > @storybook/node-logger > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-YARGSPARSER-560381:
+    - concurrently > yargs > yargs-parser:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > playroom > webpack-dev-server > yargs > yargs-parser:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - concurrently > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > babel-jest > @jest/transform > babel-plugin-istanbul > test-exclude > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - snyk > snyk-module > hosted-git-info:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-PATHPARSE-1077067:
+    - concurrently > read-pkg > normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > @babel/plugin-transform-runtime > babel-plugin-polyfill-corejs2 > @babel/helper-define-polyfill-provider > resolve > path-parse:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > eslint-config-seek > eslint-plugin-react > resolve > path-parse:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-Y18N-1021887:
+    - concurrently > yargs > y18n:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > playroom > webpack-dev-server > yargs > y18n:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > storybook-chromatic > @chromaui/localtunnel > yargs > y18n:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - snyk > snyk-config > nconf > yargs > y18n:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-EJS-1049328:
+    - ejs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > kopy > jstransformer-ejs > ejs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > webpack-bundle-analyzer > ejs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > ejs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-EXPRESSFILEUPLOAD-595969:
+    - express-fileupload:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-JQUERY-565129:
+    - jquery:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-JQUERY-567880:
+    - jquery:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-JQUERY-174006:
+    - jquery:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  'npm:jquery:20150627':
+    - jquery:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-HIGHLIGHTJS-1048676:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > highlight.js:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > lowlight > highlight.js:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-HIGHLIGHTJS-1045326:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > lowlight > highlight.js:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > highlight.js:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-PRISMJS-1076581:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > refractor > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.273Z'
+  SNYK-JS-PRISMJS-1314893:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > refractor > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-PRISMJS-1585202:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > refractor > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-PRISMJS-597628:
+    - sku > @storybook/addon-knobs > @storybook/components > react-syntax-highlighter > refractor > prismjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-REACTDEVUTILS-1083268:
+    - sku > @storybook/react > react-dev-utils:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > react-dev-utils:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-SERIALIZEJAVASCRIPT-570062:
+    - sku > serialize-javascript:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-POSTCSS-1255640:
+    - sku > playroom > css-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > playroom > css-loader > icss-utils > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > playroom > css-loader > postcss-modules-extract-imports > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > playroom > css-loader > postcss-modules-local-by-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > playroom > css-loader > postcss-modules-scope > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > playroom > css-loader > postcss-modules-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > postcss-js > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > treat > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > treat > css-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > autoprefixer > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > postcss-flexbugs-fixes > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > postcss-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > css-declaration-sorter > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > cssnano-util-raw-cache > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-calc > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-colormin > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-convert-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-comments > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-duplicates > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-empty > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-overridden > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-longhand > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-rules > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-font-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-gradients > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-params > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-selectors > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-charset > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-display-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-positions > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-repeat-style > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-string > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-timing-functions > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-unicode > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-url > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-whitespace > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-ordered-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-reduce-initial > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-reduce-transforms > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-svgo > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-unique-selectors > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > treat > css-loader > postcss-modules-local-by-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > treat > css-loader > postcss-modules-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > @storybook/react > @storybook/core > css-loader > icss-utils > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-extract-imports > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-local-by-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-scope > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-longhand > stylehacks > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-BROWSERSLIST-1090194:
+    - sku > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @babel/core > @babel/helper-compilation-targets > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @babel/plugin-transform-runtime > babel-plugin-polyfill-corejs3 > core-js-compat > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > autoprefixer > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-colormin > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-rules > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-params > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-unicode > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-reduce-initial > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-longhand > stylehacks > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-rules > caniuse-api > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > react-dev-utils > browserslist:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-CSSWHAT-1298035:
+    - sku > @storybook/react > @storybook/core > html-webpack-plugin > pretty-error > renderkid > css-select > css-what:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-DNSPACKET-1293563:
+    - sku > playroom > webpack-dev-server > bonjour > multicast-dns > dns-packet:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-ELLIPTIC-1064899:
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > browserify-sign > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > create-ecdh > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-ELLIPTIC-511941:
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > browserify-sign > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > create-ecdh > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-ELLIPTIC-571484:
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > browserify-sign > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > node-libs-browser > crypto-browserify > create-ecdh > elliptic:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-INI-1048974:
+    - sku > @storybook/react > @storybook/core > react-dev-utils > global-modules > global-prefix > ini:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - snyk > snyk-config > nconf > ini:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - snyk > @snyk/update-notifier > is-installed-globally > global-dirs > ini:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+    - snyk > @snyk/update-notifier > latest-version > package-json > registry-auth-token > rc > ini:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-NTHCHECK-1586032:
+    - sku > @storybook/react > @storybook/core > html-webpack-plugin > pretty-error > renderkid > css-select > nth-check:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-POLISHED-1298071:
+    - sku > @storybook/addon-knobs > @storybook/components > polished:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/react > @storybook/core > @storybook/ui > polished:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > @storybook/addon-knobs > @storybook/addons > @storybook/api > @storybook/theming > polished:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+  SNYK-JS-POSTCSS-1090595:
+    - sku > cssnano > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > postcss-js > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > treat > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > cssnano > cssnano-preset-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.274Z'
+    - sku > treat > css-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > autoprefixer > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > postcss-flexbugs-fixes > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > @storybook/react > @storybook/core > postcss-loader > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > css-declaration-sorter > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > cssnano-util-raw-cache > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-calc > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-colormin > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-convert-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-comments > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-duplicates > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-empty > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-discard-overridden > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-longhand > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-rules > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-font-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-gradients > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-params > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-minify-selectors > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-charset > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-display-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-positions > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-repeat-style > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-string > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-timing-functions > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.275Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-unicode > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-url > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-normalize-whitespace > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-ordered-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-reduce-initial > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-reduce-transforms > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-svgo > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > cssnano > cssnano-preset-default > postcss-unique-selectors > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > treat > css-loader > postcss-modules-local-by-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > treat > css-loader > postcss-modules-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > @storybook/react > @storybook/core > css-loader > icss-utils > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.276Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-extract-imports > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-local-by-default > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-scope > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > css-loader > postcss-modules-values > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > cssnano > cssnano-preset-default > postcss-merge-longhand > stylehacks > postcss:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-PROMPTS-1729737:
+    - sku > jest > jest-cli > prompts:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-SOCKJS-575261:
+    - sku > playroom > webpack-dev-server > sockjs:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-SSRI-1246392:
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > terser-webpack-plugin > cacache > ssri:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > terser-webpack-plugin > cacache > ssri:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-TMPL-1583443:
+    - sku > babel-jest > @jest/transform > jest-haste-map > sane > walker > makeerror > tmpl:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-URLPARSE-1533425:
+    - sku > @storybook/react > @storybook/core > react-dev-utils > sockjs-client > url-parse:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > react-dev-utils > sockjs-client > eventsource > original > url-parse:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-WS-1296835:
+    - sku > jest > jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > ws:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > webpack-bundle-analyzer > ws:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > playroom > webpack-dev-server > ws:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-JSZIP-1251497:
+    - snyk > snyk-nuget-plugin > jszip:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > jszip:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-NETMASK-1089716:
+    - snyk > proxy-agent > pac-proxy-agent > pac-resolver > netmask:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-PACRESOLVER-1564857:
+    - snyk > proxy-agent > pac-proxy-agent > pac-resolver:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-BL-608877:
+    - snyk > snyk-docker-plugin > tar-stream > bl:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-ANSIHTML-1296849:
+    - sku > playroom > webpack-dev-server > ansi-html:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+    - sku > @storybook/react > @storybook/core > webpack-hot-middleware > ansi-html:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-AXIOS-1038255:
+    - sku > storybook-chromatic > @chromaui/localtunnel > axios:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-AXIOS-1579269:
+    - sku > storybook-chromatic > @chromaui/localtunnel > axios:
+        reason: None given
+        expires: '2021-11-11T18:20:53.277Z'
   'npm:ejs:20161128':
     - ejs-locals > ejs:
         reason: None given
-        expires: '2019-06-13T19:42:18.584Z'
+        expires: '2021-11-11T18:20:53.277Z'
   'npm:ejs:20161130':
     - ejs-locals > ejs:
         reason: None given
-        expires: '2019-06-13T19:42:18.584Z'
+        expires: '2021-11-11T18:20:53.277Z'
   'npm:ejs:20161130-1':
     - ejs-locals > ejs:
         reason: None given
-        expires: '2019-06-13T19:42:18.584Z'
-  'npm:ms:20170412':
-    - humanize-ms > ms:
+        expires: '2021-11-11T18:20:53.277Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - sku > @storybook/react > @storybook/core > react-dev-utils > globby > fast-glob > glob-parent:
         reason: None given
-        expires: '2019-06-13T19:42:18.584Z'
-# patches apply the minimum changes required to fix a vulnerability
-patch:
-  'npm:ms:20151024':
-    - humanize-ms > ms:
-        patched: '2019-05-14T19:41:54.673Z'
+        expires: '2021-11-11T18:20:53.278Z'
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > watchpack > watchpack-chokidar2 > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+    - sku > @storybook/react > @storybook/core > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-IMMER-1019369:
+    - sku > @storybook/react > @storybook/core > react-dev-utils > immer:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-IMMER-1540542:
+    - sku > @storybook/react > @storybook/core > react-dev-utils > immer:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-SETVALUE-1540541:
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+    - sku > @storybook/react > @storybook/core > corejs-upgrade-webpack-plugin > webpack > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+  SNYK-JS-TRIMNEWLINES-1298042:
+    - sku > x-default-browser > default-browser-id > meow > trim-newlines:
+        reason: None given
+        expires: '2021-11-11T18:20:53.278Z'
+patch: {}
