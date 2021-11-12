@@ -655,4 +655,8 @@ ignore:
     - sku > x-default-browser > default-browser-id > meow > trim-newlines:
         reason: None given
         expires: '2021-11-11T18:20:53.278Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        patched: '2021-11-12T00:12:08.101Z'
